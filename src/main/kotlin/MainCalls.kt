@@ -71,7 +71,7 @@ class MainCalls {
         println("Whats Your Houses Square Footage?: ")
         val footage:Double = try {
             readln().toDouble()
-        }catch (e:Exception){
+        }catch (e:NumberFormatException){
             println("Error: $e")
             //Default value in case a error occurs
             20000.0
@@ -89,7 +89,7 @@ class MainCalls {
 
         val seniorInt:Int = try {
             readln().toInt()
-        }catch (e:Exception){
+        }catch (e:NumberFormatException){
             println("Error When Reading Citizen Type $e")
             0 //default will be not old man
         }
@@ -113,7 +113,7 @@ class MainCalls {
         println("Whats Your Houses Square Footage?: ")
         val footage:Double = try {
             readln().toDouble()
-        }catch (e:Exception){
+        }catch (e:NumberFormatException){
             println("Error Occured When getting Square Footage: $e")
             //set the defauly square footage to 10,000
             10000.0
